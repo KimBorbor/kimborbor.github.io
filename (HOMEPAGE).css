@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    text-align: center;
+    padding: 40px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sneaks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    padding: 30px;
+    background: #1c1c1c;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sneaks img {
+    max-width: 350px;
+    height: auto;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(255, 95, 109, 0.3);
+}
+
+.sneaks h2 {
+    font-size: 2.5rem;
+    color: #ffc371;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.main {
+    background: #1e1e1e;
+    padding: 15px 0;
+    margin: 30px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main ul {
+    list-style: none;
+    text-align: center;
+}
+
+.main ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.main ul li a {
+    color: #ffc371;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.main ul li a:hover {
+    color: #ff5f6d;
+}
+
+.main ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: #ff5f6d;
+    transition: width 0.4s;
+    bottom: -5px;
+    left: 0;
+}
+
+.main ul li a:hover:after {
+    width: 100%;
+}
+
+main {
+    background: #1e1e1e;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+main h2, h3 {
+    color: #ffc371;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+main p {
+    color: #f0f0f0;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+ul.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+ul.images li img {
+    width: 300px;
+    border-radius: 10px;
+    border: 4px solid #ff5f6d;
+    transition: transform 0.3s ease;
+}
+
+ul.images li img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 95, 109, 0.3);
+}
+
+.join {
+    background-color: #282828;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.join h4 {
+    font-size: 2rem;
+    color: #ffc371;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.join p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.join form input[type="email"] {
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    width: 70%;
+    max-width: 400px;
+    background-color: #fff;
+    color: #333;
+}
+
+.join form input[type="email"]::placeholder {
+    color: #999;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #181818;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #aaa;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1400px) {
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .sneaks img {
+        max-width: 300px;
+    }
+
+    .sneaks h2 {
+        font-size: 2rem;
+    }
+
+    .main ul li a {
+        font-size: 1.2rem;
+    }
+
+    main h2, main h3 {
+        font-size: 1.8rem;
+    }
+
+    section.join h4 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .sneaks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sneaks img {
+        margin: 0 0 20px 0;
+        max-width: 250px;
+    }
+
+    .sneaks h2 {
+        font-size: 1.8rem;
+    }
+
+    .main ul li a {
+        font-size: 1.1rem;
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    main h2, main h3 {
+        font-size: 1.6rem;
+    }
+
+    ul.images li img {
+        width: 250px;
+    }
+
+    .join h4 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    body {
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .sneaks h2 {
+        font-size: 1.6rem;
+    }
+
+    .main ul li {
+        margin: 0 10px;
+    }
+
+    .main ul li a {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    main h2, main h3 {
+        font-size: 1.4rem;
+    }
+
+    ul.images li img {
+        width: 200px;
+    }
+
+    .join h4 {
+        font-size: 1.4rem;
+    }
+
+    .join form input[type="email"] {
+        width: 90%;
+    }
+}
